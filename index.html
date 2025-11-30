@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elias Dietrich – Fotograf in Linz</title>
+<meta name="description" content="Elias Dietrich – Fotograf in Linz: Portraits, Business & Familienfotografie. Kreative, emotionale Bilder, die den Menschen in den Mittelpunkt stellen.">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<!-- OG META -->
+<meta property="og:title" content="Elias Dietrich – Fotograf in Linz">
+<meta property="og:description" content="Fotografie in Linz: Portraits, Business & Familienfotografie. Kreative, emotionale Bilder.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.eliasdietrich.at">
+<meta property="og:image" content="https://www.eliasdietrich.at/og-image.jpg">
+
+<!-- TWITTER -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Elias Dietrich – Fotograf in Linz">
+<meta name="twitter:description" content="Fotografie in Linz: Portraits, Business & Familienfotografie. Kreative, emotionale Bilder.">
+<meta name="twitter:image" content="https://www.eliasdietrich.at/og-image.jpg">
+
+<!-- SCHEMA.ORG -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Person",
+ "name": "Elias Frederic Dietrich",
+ "jobTitle": "Fotograf",
+ "address": {
+   "@type": "PostalAddress",
+   "streetAddress": "Höchsmannstraße 7",
+   "addressLocality": "Linz",
+   "postalCode": "4020",
+   "addressCountry": "AT"
+ },
+ "email": "kontakt@eliasdietrich.at",
+ "telephone": "+43 670 4033146",
+ "url": "https://www.eliasdietrich.at",
+ "sameAs": ["https://www.instagram.com/elias.f.dietrich/"]
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+/* RESET & BASIC */
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:"Lato", sans-serif; background:#fff; color:#000; line-height:1.35; font-weight:300; padding:60px; }
+
+/* CONTAINER GRID */
+.container { max-width:1600px; margin:0 auto; display:grid; grid-template-columns:420px 1fr; gap:40px; }
+
+/* LEFT COLUMN */
+.left-column { display:flex; flex-direction:column; justify-content:space-between; padding:0 20px; }
+.left-column h1 { font-weight:700; letter-spacing:0.5px; }
+.claim { font-size:20px; letter-spacing:0.2px; line-height:1.35; }
+.contact-block .intro-text { margin-bottom:12px; font-style:italic; line-height:1.65; }
+.footer { margin-top:30px; }
+.footer-links { display:flex; gap:18px; flex-wrap:wrap; }
+.footer-link { font-weight:400; letter-spacing:0.2px; text-decoration:underline; cursor:pointer; color:inherit; transition:opacity .15s ease; }
+.footer-link:hover { opacity:0.55; }
+
+/* RIGHT COLUMN SLIDERS */
+.sliders { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+.slider { height:90vh; overflow-y:auto; position:relative; scroll-behavior:smooth; }
+.slide { margin-bottom:16px; }
+.slide img { width:100%; height:auto; display:block; }
+
+/* HIDE SCROLLBARS */
+.slider::-webkit-scrollbar, .mobile-slider::-webkit-scrollbar { display:none; }
+.slider, .mobile-slider { -ms-overflow-style:none; scrollbar-width:none; }
+
+/* MOBILE SLIDER */
+.mobile-slider { display:none; overflow-x:auto; scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch; white-space:nowrap; margin:20px 0; gap:0; }
+.mobile-slider .slide { display:inline-block; width:100%; scroll-snap-align:start; margin-right:0; }
+
+/* PHOTO LIGHTBOX */
+#photo-lightbox { position:fixed; inset:0; background:rgba(0,0,0,0.95); display:flex; justify-content:center; align-items:center; opacity:0; pointer-events:none; transition:opacity .3s ease; z-index:999; }
+#photo-lightbox.show { opacity:1; pointer-events:all; }
+#photo-lightbox img { max-width:95%; max-height:95%; }
+
+/* TEXT LIGHTBOX */
+#lightbox { position:fixed; inset:0; background:rgba(0,0,0,0.93); display:flex; justify-content:center; align-items:flex-start; overflow-y:auto; padding:40px 20px; opacity:0; pointer-events:none; transition:opacity .3s ease; z-index:9999; }
+#lightbox.show { opacity:1; pointer-events:all; }
+#lightbox-content { background:rgba(255,255,255,0.1); color:#fff; max-width:600px; padding:40px; font-size:18px; line-height:1.5; font-weight:300; margin:40px auto; }
+#close-lightbox { position:absolute; top:10px; right:20px; cursor:pointer; font-size:28px; font-weight:bold; }
+#lightbox-content hr { border:none; border-top:1px solid rgba(255,255,255,0.3); margin:30px 0; }
+#lightbox-content ul { list-style:none; padding-left:0; }
+#lightbox-content li { margin-bottom:10px; }
+
+/* RESPONSIVE */
+@media (max-width:1000px) {
+  body { font-size:16px; line-height:1.5; padding:20px; }
+  .container { grid-template-columns:1fr; }
+  .left-column h1 { font-size:26px; letter-spacing:0.4px; }
+  .claim { font-size:16px; line-height:1.2; }
+  .contact-block .intro-text { font-size:14px; line-height:1.55; }
+  #lightbox-content { font-size:12px; padding:20px; max-width:90%; }
+  .sliders { display:none; }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- LEFT COLUMN -->
+  <div class="left-column">
+    <div class="header-block">
+      <h1>ELIAS DIETRICH</h1>
+      <p class="claim">Fotografie, die den Menschen in den Mittelpunkt stellt</p>
+    </div>
+
+    <!-- MOBILE SLIDER -->
+    <div class="mobile-slider" id="mobileSlider">
+      <div class="slide"><img loading="lazy" src="charakter-portraet-christa-hasengruber-linz-paraount-licht.jpg" alt="charakter Porträt im Studio einer attraktiven Frau reifen Alters, beleuchtet mit der Paramount Lichttechnik"></div>
+      <div class="slide"><img loading="lazy" src="charakter-portraet-friedrich-berguber-linz.jpg" alt="charakter Porträt von Friedrich Berghuber, fotografiert in Linz"></div>
+      <div class="slide"><img loading="lazy" src="charakter-portrait-friedrich-berghuber-unterlicht.jpg" alt="charakter Portrait von Friedrich Berghuber, fotografiert mit Unterlicht"></div>
+      <div class="slide"><img loading="lazy" src="charakter-portrait-studio-reife-frau.jpg" alt="charakter Portrait von Christa Hasengruber im Studio in Linz, mit der Butterfly-light Lichttechnik beleuchtet"></div>
+      <div class="slide"><img loading="lazy" src="fashion-Street-portrait-kelvin-addai-black-model.jpg" alt="Fashion Porträt von Kelvin Addai mit Barett und karierter Jacke, sitzend in urbaner Umgebung in Linz, im Streetstyle-Look"></div>
+      <div class="slide"><img loading="lazy" src="gitarrist-anzug-closeup-tobias-lorenz-outdoor.jpg" alt="Tobias Lorenz im Anzug und Sonnenbrille spielt konzentriert E-Gitarre, Nahaufnahme in der Natur"></div>
+      <div class="slide"><img loading="lazy" src="gitarrist-anzug-portraet-tobias-lorenz-outdoor.jpg" alt="Outdoor Porträt von Tobias Lorenz im Anzug mit Sonnenbrille, der eine E-Gitarre spielt"></div>
+      <div class="slide"><img loading="lazy" src="herbst-portraet-junge-frau-apfel.jpg" alt="Laura Schmolmüller trägt einen roten Pullover und roten Lippenstift, hält einen roten Apfel, Herbstliches Porträt"></div>
+      <div class="slide"><img loading="lazy" src="kelvin-addai-black-and-white-portrait-expression.jpg" alt="ausdrucksstarkes Schwarz-Weiß-Porträt von Kelvin Addai mit Barett und Handschuhen, fotografiert im Vintage-Stil"></div>
+      <div class="slide"><img loading="lazy" src="laechelnde-junge-frau-studio-portraet-schwarzweiss.jpg" alt="Porträt einer lächelnden jungen Frau, fotografiert im Studio und beleuchtete mit der Clamshell Lichttechnik"></div>
+      <div class="slide"><img loading="lazy" src="mann-bonifacio-korsika-portraet-jeansjacke.jpg" alt="lokaler Mann aus Bonifacio auf Korsika sitzt in Jeansjacke auf einer Steintreppe und blickt freundlich in die Kamera"></div>
+      <div class="slide"><img loading="lazy" src="mode-fotoshooting-streetwear-lorenz-dietrich.jpg" alt="Mode Fotoshooting in Linz, Lorenz Dietrich trägt Streetwear"></div>
+      <div class="slide"><img loading="lazy" src="nature-fashion-shooting-streetwear-linz.jpg" alt="Fashion Fotoshooting mit Lorenz Dietrich, Streetwear und Sonnenbrille in der Natur"></div>
+      <div class="slide"><img loading="lazy" src="outdoor-fashion-shooting-junger-mann-linz.jpg" alt="outdoor Fashion Fotoshooting mit Lorenz Dietrich, Streetwear"></div>
+      <div class="slide"><img loading="lazy" src="portraet-laechelnde-oma-studio.jpg" alt="Oma lächelt mit Blick in die Kamera, Studioporträt in Linz"></div>
+      <div class="slide"><img loading="lazy" src="portraet-laechelndes-maedchen-sommerkleid.jpg" alt="Porträt eines lächelnden Mädchens in einem Sommerkleid im Garten"></div>
+      <div class="slide"><img loading="lazy" src="portrait-junge-frau-weisse-blume.jpg" alt="natürliches Portrait einer jungen Frau, die eine weiße Blume vor sich hält"></div>
+      <div class="slide"><img loading="lazy" src="schwarzweiss-charakter-portraet-junge-frau-studio.jpg" alt="charakter Porträt in Schwarzweiß von Lena Lorenz im Studio, beleuchtet mit dem Clamshell Licht"></div>
+      <div class="slide"><img loading="lazy" src="schwarzweiss-portraet-loop-licht-studio-lena-lorenz.jpg" alt="schwarzweiß Porträt von Lena Lorenz im Studio, fotografiert mit Loop-Licht"></div>
+      <div class="slide"><img loading="lazy" src="strand-akrobatischer-sprung-lorenz-dietrich.jpg" alt="Lorenz Dietrich macht einen akrobatischen Sprung am Strand bei Sonnenuntergang"></div>
+      <div class="slide"><img loading="lazy" src="tanzende-junge-frau-weißes-sommerkleid.jpg" alt="junge, dunkelhäutige Frau in weiß-schwarz gemustertem Sommerkleid tanzt in der Natur"></div>
+      <div class="slide"><img loading="lazy" src="tanzender-junger-man-jeans-latzhose-golden-hour.jpg" alt="junger, dunkelhäutiger Mann tanzt und trägt eine Latzhose aus Jeansstoff, goldene Stunde"></div>
+      <div class="slide"><img loading="lazy" src="vintage-style-portraet-telefonzelle-kelvin-addai.jpg" alt="ausdrucksstarkes Porträt von Kelvin Addai vor einer Telefonzelle in Linz, fotografiert im Vintage-Style"></div>
+      <div class="slide"><img loading="lazy" src="black-and-white-fine-art-studio-portrait-young-woman.jpg" alt="Studio Portrait von Lena Lorenz in schwarz-weiß, mit der Loop Light Lichttechnik fotografiert"></div>
+      <div class="slide"><img loading="lazy" src="outdoor-fashion-portrait-lorenz-dietrich-linz.jpg" alt="outdoor Fashion Portrait von Lorenz Dietrich mit Sonnenbrille in Linz"></div>
+      <div class="slide"><img loading="lazy" src="studio-portraet-junge-frau-clamshell-licht.jpg" alt="ausdrucksstarkes schwarzweiß Studio Porträt von Lena Lorenz, fotografiert mit der Clamshell Light Lichttechnik"></div>
+      <div class="slide"><img loading="lazy" src="studio-portrait-lena-lorenz-clamshell-light-black-and-white.jpg" alt="natürliches Studio Porträt von Lena Lorenz in Schwarzweiß, mit der Clamshell Lichttechnik beleuchtet"></div>
+      <div class="slide"><img loading="lazy" src="cinematic-portrait-telephone-booth-vintage-style-kelvin-addai.jpg" alt="cinematisches Porträt von Kelvin Addai in einer Telefonzelle, im Vintage-Style fotografiert"></div>
+      <div class="slide"><img loading="lazy" src="fine-art-portrait-schwarzweiss-dunkelhäutiger-mann.jpg" alt="ausdrucksstarkes Schwarz-Weiß-Porträt eines dunkelhäutigen Mannes mit Haube und Mantel, Kelvin Addai"></div>
+      <div class="slide"><img loading="lazy" src="hoher-sprung-düne-lorenz-dietrich.jpg" alt="Lorenz Dietrich fliegt über eine Düne in Portugal"></div>
+      <div class="slide"><img loading="lazy" src="outdoor-portraet-crossing-europe-linz.jpg" alt="Porträt von italienischem Schauspieler Morr Ndiaye im Freien, Crossing Europe Linz"></div>
+      <div class="slide"><img loading="lazy" src="outdoor-portrait-morr-ndiaye-linz.jpg" alt="Morr Ndiaye blickt lächelnd in die Ferne, Porträtaufnahme im Freien mit grünen Bäumen im Hintergrund, Crossing Europe Linz"></div>
+      <div class="slide"><img loading="lazy" src="portraet-morr-ndiaye-crossing-europe-linz.jpg" alt="italienischer Schauspieler Morr Ndiaye sitzt auf einer Stiege, Crossing Europe Linz"></div>
+      <div class="slide"><img loading="lazy" src="portrait-nachdenklicher-mann-treppe-morr-ndiaye.jpg" alt="emotionales Porträt eines dunkelhäutigen Mannes auf einer Treppe, nachdenklicher Ausdruck, natürliche Lichtstimmung"></div>
+      <div class="slide"><img loading="lazy" src="portugal-duene-sprung-lorenz-dietrich.jpg" alt="Lorenz Dietrich springt von einer Düne an einem Strand in Portugal"></div>
+      <div class="slide"><img loading="lazy" src="sprung-sand-portugal-lorenz-dietrich.jpg" alt="Lorenz Dietrich springt an einem Strand in Portugal, Sand fliegt durch die Luft"></div>
+      <div class="slide"><img loading="lazy" src="kind-skifahren-postalm-hütte.jpg" alt="Kind in blauer Skibekleidung mit Skistöcken im Postalm Winterpark, weitere Skifahrer und Hütten im Hintergrund"></div>
+      <div class="slide"><img loading="lazy" src="kind-skifahren-postalm-winterpark.jpg" alt="Kind in bunter Skibekleidung auf Förderband im Postalm Winterpark, verschneiter Berg im Hintergrund"></div>
+      <div class="slide"><img loading="lazy" src="skilift-postalm-winterpark.jpg" alt="Skifahrer in bunter Winterkleidung warten in der Schlange am Skilift im Postalm Winterpark, verschneite Piste und Berg im Hintergrund"></div>
+      <div class="slide"><img loading="lazy" src="western-portrait-lena-lorenz-pferd.jpg" alt="Portrait im Western-Style, Lena Lorenz auf schwarzem Pferd"></div>
+      <div class="slide"><img loading="lazy" src="vintage-portraet-lena-lorenz-pferd-schwarz-weiss.jpg" alt="vintage-Style Porträt von Lena Lorenz auf einem schwarzen Pferd, schwarzweiß Foto"></div>
+      <div class="slide"><img loading="lazy" src="junge-frau-wiese-alpen-portrait-lena-lorenz.jpg" alt="junge Frau hockt nachdenklich auf einer Bergwiese in den Alpen, im Hintergrund grüne Hügel und eine Kuh auf der Alm"></div>
+      <div class="slide"><img loading="lazy" src="junge-frau-pferd-schwarzweiss-portraet.jpg" alt="Lena Lorenz sitzt auf einem schwarzen Pferd, Porträt in Schwarzweiß"></div>
+    </div>
+
+    <div class="bottom-block">
+      <div class="contact-block">
+        <p class="intro-text">Ob für Unternehmen oder Privat – ich freue mich auf Ihre Projektidee!</p>
+        <p><strong>Elias Frederic Dietrich</strong></p>
+        <p>Höchsmannstraße 7<br>4020 Linz, Austria</p>
+        <p>+43 670 4033146<br>kontakt@eliasdietrich.at</p>
+      </div>
+
+      <footer class="footer">
+        <nav class="footer-links">
+          <a href="https://www.instagram.com/elias.f.dietrich/" target="_blank" rel="noopener noreferrer" class="footer-link">Instagram</a>
+          <span class="footer-link" data-page="kunden">Kund*innen</span>
+          <span class="footer-link" data-page="impressum">Impressum</span>
+        </nav>
+      </footer>
+    </div>
+  </div>
+
+  <!-- RIGHT COLUMN -->
+  <div class="sliders">
+    <div class="slider" id="slider1">
+    <div class="slide"><img loading="lazy" src="charakter-portraet-christa-hasengruber-linz-paraount-licht.jpg" alt="charakter Porträt im Studio einer attraktiven Frau reifen Alters, beleuchtet mit der Paramount Lichttechnik"></div>
+      <div class="slide"><img loading="lazy" src="charakter-portraet-friedrich-berguber-linz.jpg" alt="charakter Porträt von Friedrich Berghuber, fotografiert in Linz"></div>
+      <div class="slide"><img loading="lazy" src="charakter-portrait-friedrich-berghuber-unterlicht.jpg" alt="charakter Portrait von Friedrich Berghuber, fotografiert mit Unterlicht"></div>
+      <div class="slide"><img loading="lazy" src="charakter-portrait-studio-reife-frau.jpg" alt="charakter Portrait von Christa Hasengruber im Studio in Linz, mit der Butterfly-light Lichttechnik beleuchtet"></div>
+      <div class="slide"><img loading="lazy" src="fashion-Street-portrait-kelvin-addai-black-model.jpg" alt="Fashion Porträt von Kelvin Addai mit Barett und karierter Jacke, sitzend in urbaner Umgebung in Linz, im Streetstyle-Look"></div>
+      <div class="slide"><img loading="lazy" src="gitarrist-anzug-closeup-tobias-lorenz-outdoor.jpg" alt="Tobias Lorenz im Anzug und Sonnenbrille spielt konzentriert E-Gitarre, Nahaufnahme in der Natur"></div>
+      <div class="slide"><img loading="lazy" src="gitarrist-anzug-portraet-tobias-lorenz-outdoor.jpg" alt="Outdoor Porträt von Tobias Lorenz im Anzug mit Sonnenbrille, der eine E-Gitarre spielt"></div>
+      <div class="slide"><img loading="lazy" src="herbst-portraet-junge-frau-apfel.jpg" alt="Laura Schmolmüller trägt einen roten Pullover und roten Lippenstift, hält einen roten Apfel, Herbstliches Porträt"></div>
+      <div class="slide"><img loading="lazy" src="kelvin-addai-black-and-white-portrait-expression.jpg" alt="ausdrucksstarkes Schwarz-Weiß-Porträt von Kelvin Addai mit Barett und Handschuhen, fotografiert im Vintage-Stil"></div>
+      <div class="slide"><img loading="lazy" src="laechelnde-junge-frau-studio-portraet-schwarzweiss.jpg" alt="Porträt einer lächelnden jungen Frau, fotografiert im Studio und beleuchtete mit der Clamshell Lichttechnik"></div>
+      <div class="slide"><img loading="lazy" src="mann-bonifacio-korsika-portraet-jeansjacke.jpg" alt="lokaler Mann aus Bonifacio auf Korsika sitzt in Jeansjacke auf einer Steintreppe und blickt freundlich in die Kamera"></div>
+      <div class="slide"><img loading="lazy" src="mode-fotoshooting-streetwear-lorenz-dietrich.jpg" alt="Mode Fotoshooting in Linz, Lorenz Dietrich trägt Streetwear"></div>
+      <div class="slide"><img loading="lazy" src="nature-fashion-shooting-streetwear-linz.jpg" alt="Fashion Fotoshooting mit Lorenz Dietrich, Streetwear und Sonnenbrille in der Natur"></div>
+      <div class="slide"><img loading="lazy" src="outdoor-fashion-shooting-junger-mann-linz.jpg" alt="outdoor Fashion Fotoshooting mit Lorenz Dietrich, Streetwear"></div>
+      <div class="slide"><img loading="lazy" src="portraet-laechelnde-oma-studio.jpg" alt="Oma lächelt mit Blick in die Kamera, Studioporträt in Linz"></div>
+      <div class="slide"><img loading="lazy" src="portraet-laechelndes-maedchen-sommerkleid.jpg" alt="Porträt eines lächelnden Mädchens in einem Sommerkleid im Garten"></div>
+      <div class="slide"><img loading="lazy" src="portrait-junge-frau-weisse-blume.jpg" alt="natürliches Portrait einer jungen Frau, die eine weiße Blume vor sich hält"></div>
+      <div class="slide"><img loading="lazy" src="schwarzweiss-charakter-portraet-junge-frau-studio.jpg" alt="charakter Porträt in Schwarzweiß von Lena Lorenz im Studio, beleuchtet mit dem Clamshell Licht"></div>
+      <div class="slide"><img loading="lazy" src="schwarzweiss-portraet-loop-licht-studio-lena-lorenz.jpg" alt="schwarzweiß Porträt von Lena Lorenz im Studio, fotografiert mit Loop-Licht"></div>
+      <div class="slide"><img loading="lazy" src="strand-akrobatischer-sprung-lorenz-dietrich.jpg" alt="Lorenz Dietrich macht einen akrobatischen Sprung am Strand bei Sonnenuntergang"></div>
+      <div class="slide"><img loading="lazy" src="tanzende-junge-frau-weißes-sommerkleid.jpg" alt="junge, dunkelhäutige Frau in weiß-schwarz gemustertem Sommerkleid tanzt in der Natur"></div>
+      <div class="slide"><img loading="lazy" src="tanzender-junger-man-jeans-latzhose-golden-hour.jpg" alt="junger, dunkelhäutiger Mann tanzt und trägt eine Latzhose aus Jeansstoff, goldene Stunde"></div>
+      <div class="slide"><img loading="lazy" src="vintage-style-portraet-telefonzelle-kelvin-addai.jpg" alt="ausdrucksstarkes Porträt von Kelvin Addai vor einer Telefonzelle in Linz, fotografiert im Vintage-Style"></div>
+      <div class="slide"><img loading="lazy" src="black-and-white-fine-art-studio-portrait-young-woman.jpg" alt="Studio Portrait von Lena Lorenz in schwarz-weiß, mit der Loop Light Lichttechnik fotografiert"></div>
+      <div class="slide"><img loading="lazy" src="outdoor-fashion-portrait-lorenz-dietrich-linz.jpg" alt="outdoor Fashion Portrait von Lorenz Dietrich mit Sonnenbrille in Linz"></div>
+      <div class="slide"><img loading="lazy" src="studio-portraet-junge-frau-clamshell-licht.jpg" alt="ausdrucksstarkes schwarzweiß Studio Porträt von Lena Lorenz, fotografiert mit der Clamshell Light Lichttechnik"></div>
+      <div class="slide"><img loading="lazy" src="studio-portrait-lena-lorenz-clamshell-light-black-and-white.jpg" alt="natürliches Studio Porträt von Lena Lorenz in Schwarzweiß, mit der Clamshell Lichttechnik beleuchtet"></div>
+      <div class="slide"><img loading="lazy" src="cinematic-portrait-telephone-booth-vintage-style-kelvin-addai.jpg" alt="cinematisches Porträt von Kelvin Addai in einer Telefonzelle, im Vintage-Style fotografiert"></div>
+      <div class="slide"><img loading="lazy" src="fine-art-portrait-schwarzweiss-dunkelhäutiger-mann.jpg" alt="ausdrucksstarkes Schwarz-Weiß-Porträt eines dunkelhäutigen Mannes mit Haube und Mantel, Kelvin Addai"></div>
+      <div class="slide"><img loading="lazy" src="hoher-sprung-düne-lorenz-dietrich.jpg" alt="Lorenz Dietrich fliegt über eine Düne in Portugal"></div>
+      <div class="slide"><img loading="lazy" src="outdoor-portraet-crossing-europe-linz.jpg" alt="Porträt von italienischem Schauspieler Morr Ndiaye im Freien, Crossing Europe Linz"></div>
+      <div class="slide"><img loading="lazy" src="outdoor-portrait-morr-ndiaye-linz.jpg" alt="Morr Ndiaye blickt lächelnd in die Ferne, Porträtaufnahme im Freien mit grünen Bäumen im Hintergrund, Crossing Europe Linz"></div>
+      <div class="slide"><img loading="lazy" src="portraet-morr-ndiaye-crossing-europe-linz.jpg" alt="italienischer Schauspieler Morr Ndiaye sitzt auf einer Stiege, Crossing Europe Linz"></div>
+      <div class="slide"><img loading="lazy" src="portrait-nachdenklicher-mann-treppe-morr-ndiaye.jpg" alt="emotionales Porträt eines dunkelhäutigen Mannes auf einer Treppe, nachdenklicher Ausdruck, natürliche Lichtstimmung"></div>
+      <div class="slide"><img loading="lazy" src="portugal-duene-sprung-lorenz-dietrich.jpg" alt="Lorenz Dietrich springt von einer Düne an einem Strand in Portugal"></div>
+      <div class="slide"><img loading="lazy" src="sprung-sand-portugal-lorenz-dietrich.jpg" alt="Lorenz Dietrich springt an einem Strand in Portugal, Sand fliegt durch die Luft"></div>
+    </div>
+    <div class="slider" id="slider2">
+     <div class="slide"><img loading="lazy" src="kind-skifahren-postalm-hütte.jpg" alt="Kind in blauer Skibekleidung mit Skistöcken im Postalm Winterpark, weitere Skifahrer und Hütten im Hintergrund"></div>
+      <div class="slide"><img loading="lazy" src="kind-skifahren-postalm-winterpark.jpg" alt="Kind in bunter Skibekleidung auf Förderband im Postalm Winterpark, verschneiter Berg im Hintergrund"></div>
+      <div class="slide"><img loading="lazy" src="skilift-postalm-winterpark.jpg" alt="Skifahrer in bunter Winterkleidung warten in der Schlange am Skilift im Postalm Winterpark, verschneite Piste und Berg im Hintergrund"></div>
+      <div class="slide"><img loading="lazy" src="western-portrait-lena-lorenz-pferd.jpg" alt="Portrait im Western-Style, Lena Lorenz auf schwarzem Pferd"></div>
+      <div class="slide"><img loading="lazy" src="vintage-portraet-lena-lorenz-pferd-schwarz-weiss.jpg" alt="vintage-Style Porträt von Lena Lorenz auf einem schwarzen Pferd, schwarzweiß Foto"></div>
+      <div class="slide"><img loading="lazy" src="junge-frau-wiese-alpen-portrait-lena-lorenz.jpg" alt="junge Frau hockt nachdenklich auf einer Bergwiese in den Alpen, im Hintergrund grüne Hügel und eine Kuh auf der Alm"></div>
+      <div class="slide"><img loading="lazy" src="junge-frau-pferd-schwarzweiss-portraet.jpg" alt="Lena Lorenz sitzt auf einem schwarzen Pferd, Porträt in Schwarzweiß"></div>
+    </div>
+  </div>
+</div>
+
+<!-- PHOTO LIGHTBOX -->
+<div id="photo-lightbox"><img id="photo-lightbox-img" src=""></div>
+
+<!-- TEXT LIGHTBOX -->
+<div id="lightbox">
+  <div id="lightbox-content">
+    <span id="close-lightbox">&times;</span>
+  </div>
+</div>
+
+<script>
+// MOBILE SLIDER DISPLAY
+function setupMobileSlider(){
+  const slider = document.getElementById("mobileSlider");
+  slider.style.display = window.innerWidth <= 1000 ? "block" : "none";
+}
+setupMobileSlider();
+window.addEventListener("resize", setupMobileSlider);
+
+// PHOTO LIGHTBOX
+const photoBox = document.getElementById("photo-lightbox");
+const photoImg = document.getElementById("photo-lightbox-img");
+document.querySelectorAll(".slide img").forEach(img => {
+  img.addEventListener("click", () => {
+    photoImg.src = img.src;
+    photoBox.classList.add("show");
+  });
+});
+photoBox.addEventListener("click", () => photoBox.classList.remove("show"));
+
+// SHUFFLE SLIDERS
+function shuffleArray(array){
+  for(let i=array.length-1;i>0;i--){
+    const j=Math.floor(Math.random()*(i+1));
+    [array[i],array[j]]=[array[j],array[i]];
+  }
+  return array;
+}
+["slider1","slider2"].forEach(id=>{
+  const slider=document.getElementById(id);
+  shuffleArray(Array.from(slider.querySelectorAll(".slide"))).forEach(slide=>slider.appendChild(slide));
+});
+
+// TEXT LIGHTBOX CONTENT
+const lightbox = document.getElementById("lightbox");
+const lightboxContent = document.getElementById("lightbox-content");
+const pages = {
+  kunden:`<strong>Kund*innen</strong><br><br>
+  Postalm Winterpark<br>
+  LINZ FMR - Art in Digital Contexts and Public Spaces<br>
+  Kunstraum Memphis – Kunst und Theorie<br>
+  Cambio Beautyacademy<br>
+  Business & Design School Lentia<br>
+  qujOchÖ<br>
+  Waldorfschule Linz<br>
+  Khevenhüller Gymnasium Linz<br>
+  Forest Encounters<br>
+  Sonnenhof Freinberg<br><br>
+  <strong>Cooperationen</strong><br>
+  BOXA FILM`,
+  impressum:`<h2>Impressum</h2>
+  <p><strong>Fotograf / Unternehmen:</strong><br>
+  Elias Frederic Dietrich<br>
+  Höchsmannstraße 7, 4020 Linz, Österreich<br>
+  Telefon: +43 670 4033146<br>
+  E-Mail: kontakt@eliasdietrich.at<br>
+  Website: <a href="https://eliasdietrich.at" target="_blank">eliasdietrich.at</a></p>
+  <p>Unternehmensgegenstand: Fotografie</p>
+  <hr style="margin:30px 0;">
+  <h2>Allgemeine Geschäftsbedingungen (AGB) – Fotografie</h2>
+  <p>Diese AGB gelten für alle Verträge über fotografische Dienstleistungen zwischen Elias Frederic Dietrich („Fotograf“) und dem Kunden („Auftraggeber“).</p>
+  <h3>1. Vertragsabschluss</h3>
+  <p>Mit der Buchung eines Termins oder der Annahme eines Angebots erklärt der Auftraggeber verbindlich, die fotografischen Dienstleistungen des Fotografen in Anspruch zu nehmen. Der Vertrag kommt durch schriftliche Bestätigung oder E-Mail durch den Fotografen zustande.</p>
+  <h3>2. Leistungen</h3>
+  <p>Die fotografischen Leistungen erfolgen wie vereinbart. Änderungen bedürfen einer gesonderten Vereinbarung.</p>
+  <h3>3. Preise und Zahlung</h3>
+  <p>Die Preise richten sich nach dem jeweiligen Angebot. Rechnungen sind innerhalb von 14 Tagen nach Rechnungsstellung ohne Abzug fällig.</p>
+  <h3>4. Rücktritt / Stornierung / Verschiebung</h3>
+  <ul>
+  <li>Bis 14 Tage vor dem Termin: 0%</li>
+  <li>Bis 7 Tage vor dem Termin: 25% des Honorars</li>
+  <li>Weniger als 7 Tage vor dem Termin: 50% des Honorars</li>
+  <li>Verschiebung bei Krankheit oder unvorhersehbaren Ereignissen ist kostenfrei möglich, sofern mindestens 48 Stunden vorher abgesagt oder verschoben wird.</li>
+  </ul>
+  <h3>5. Nutzungsrechte</h3>
+  <p>Der Fotograf bleibt Inhaber der Urheberrechte. Auftraggeber erhält einfaches Nutzungsrecht.</p>
+  <h3>6. Lieferung</h3>
+  <p>Liefertermine sind unverbindlich, Nachbearbeitungen über das vereinbarte Maß hinaus werden gesondert berechnet.</p>
+  <h3>7. Haftung</h3>
+  <p>Haftung nur für Vorsatz und grobe Fahrlässigkeit.</p>
+  <h3>8. Datenschutz</h3>
+  <p>Personenbezogene Daten werden ausschließlich zur Durchführung des Auftrags verarbeitet.</p>
+  <h3>9. Schlussbestimmungen</h3>
+  <p>Änderungen bedürfen Schriftform. Gerichtsstand Linz. Österreichisches Recht.</p>`
+};
+
+function isSafari(){ return /^((?!chrome|android).)*safari/i.test(navigator.userAgent); }
+function handleLightboxClose(page){
+  lightbox.classList.remove("show");
+  if(page==="impressum" && isSafari()){ window.location.reload(); }
+}
+
+// OPEN LIGHTBOX
+document.querySelectorAll('.footer-link').forEach(link=>{
+  link.addEventListener('click', ()=>{
+    const page = link.dataset.page;
+    if(page && pages[page]){
+      lightboxContent.innerHTML = '<span id="close-lightbox">&times;</span>'+pages[page];
+      lightbox.classList.add('show');
+      document.getElementById('close-lightbox').addEventListener('click',()=>handleLightboxClose(page));
+    }
+  });
+});
+
+// CLOSE LIGHTBOX ON BACKGROUND OR ESC
+lightbox.addEventListener('click', e=>{ if(e.target===lightbox){ handleLightboxClose(lightboxContent.innerHTML.includes("Impressum")?"impressum":null); } });
+document.addEventListener('keydown', e=>{ if(e.key==="Escape" && lightbox.classList.contains("show")){ handleLightboxClose(lightboxContent.innerHTML.includes("Impressum")?"impressum":null); } });
+</script>
+
+</body>
+</html>
