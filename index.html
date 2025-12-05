@@ -23,26 +23,6 @@
 <!-- SCHEMA.ORG -->
 <script type="application/ld+json">
 {
- "@context": "https://schema.org",
- "@type": "Person",
- "name": "Elias Frederic Dietrich",
- "jobTitle": "Fotograf",
- "address": {
-   "@type": "PostalAddress",
-   "streetAddress": "Höchsmannstraße 7",
-   "addressLocality": "Linz",
-   "postalCode": "4020",
-   "addressCountry": "AT"
- },
- "email": "kontakt@eliasdietrich.at",
- "telephone": "+43 670 4033146",
- "url": "https://www.eliasdietrich.at",
- "sameAs": ["https://www.instagram.com/elias.f.dietrich/"]
-}
-</script>
-
-<script type="application/ld+json">
-{
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Elias Frederic Dietrich – Fotograf",
@@ -66,8 +46,14 @@
   "servesLocation": "Linz, Oberösterreich",
   "sameAs": [
     "https://www.instagram.com/elias.f.dietrich/"
-  ]
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Elias Frederic Dietrich",
+    "jobTitle": "Fotograf"
+  }
 }
+
 </script>
 
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
@@ -85,7 +71,7 @@ body { font-family:"Lato", sans-serif; background:#ffffff; color:#000; line-heig
 }
 
 .nolink:hover {
-  opacity: 0.85;
+  opacity: 0.55;
 }
 
 /* CONTAINER GRID */
@@ -154,7 +140,7 @@ body { font-family:"Lato", sans-serif; background:#ffffff; color:#000; line-heig
 
     <!-- MOBILE SLIDER -->
     <div class="mobile-slider" id="mobileSlider">
-      <div class="slide"><img loading="lazy" src="charakter-portraet-christa-hasengruber-linz-paraount-licht.jpg" alt="charakter Porträt im Studio einer attraktiven Frau reifen Alters, beleuchtet mit der Paramount Lichttechnik"></div>
+      <div class="slide"><img loading="lazy" src="charakter-portraet-christa-hasengruber-linz-paramount-licht.jpg" alt="charakter Porträt im Studio einer attraktiven Frau reifen Alters, beleuchtet mit der Paramount Lichttechnik"></div>
       <div class="slide"><img loading="lazy" src="charakter-portraet-friedrich-berguber-linz.jpg" alt="charakter Porträt von Friedrich Berghuber, fotografiert in Linz"></div>
       <div class="slide"><img loading="lazy" src="charakter-portrait-friedrich-berghuber-unterlicht.jpg" alt="charakter Portrait von Friedrich Berghuber, fotografiert mit Unterlicht"></div>
       <div class="slide"><img loading="lazy" src="charakter-portrait-studio-reife-frau.jpg" alt="charakter Portrait von Christa Hasengruber im Studio in Linz, mit der Butterfly-light Lichttechnik beleuchtet"></div>
@@ -348,8 +334,10 @@ const pages = {
   Höchsmannstraße 7, 4020 Linz, Österreich<br>
   Telefon: +43 670 4033146<br>
   E-Mail: kontakt@eliasdietrich.at<br>
-  Website: <a href="https://eliasdietrich.at" target="_blank">eliasdietrich.at</a></p>
-  <p>Unternehmensgegenstand: Fotografie</p>
+  Website: <a class="nolink" href="https://eliasdietrich.at">eliasdietrich.at</a></p>
+  <p>Unternehmensgegenstand: Berufsfotografie</p><br>
+  <p>GLN: 9110038091930</p>
+  <p>GISA-Zahl: 38655906</p>
   <hr style="margin:30px 0;">
   <h2>Allgemeine Geschäftsbedingungen (AGB) – Fotografie</h2>
 <p>Diese AGB gelten für alle Verträge über fotografische Dienstleistungen zwischen Elias Frederic Dietrich („Fotograf“) und dem Kunden („Auftraggeber“).</p>
