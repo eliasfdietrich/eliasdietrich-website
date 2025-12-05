@@ -125,6 +125,23 @@ body { font-family:"Lato", sans-serif; background:#ffffff; color:#000; line-heig
   #lightbox-content { font-size:12px; padding:20px; max-width:90%; }
   .sliders { display:none; }
 }
+
+.scroll-hint {
+  position: relative;         /* relativ zum normalen Fluss */
+  margin-top: -50px;          /* nach oben ziehen, knapp unter den Slides */
+  text-align: center;         /* mittig unter den Slides */
+  font-size: 28px;
+  color: rgba(0,0,0,0.5);
+  pointer-events: none;
+  animation: pulse-horizontal 1s infinite;
+}
+
+/* horizontale Pulsierung */
+@keyframes pulse-horizontal {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(8px); }
+}
+
 </style>
 </head>
 <body>
@@ -184,6 +201,9 @@ body { font-family:"Lato", sans-serif; background:#ffffff; color:#000; line-heig
       <div class="slide"><img loading="lazy" src="junge-frau-wiese-alpen-portrait-lena-lorenz.jpg" alt="junge Frau hockt nachdenklich auf einer Bergwiese in den Alpen, im Hintergrund grüne Hügel und eine Kuh auf der Alm"></div>
       <div class="slide"><img loading="lazy" src="junge-frau-pferd-schwarzweiss-portraet.jpg" alt="Lena Lorenz sitzt auf einem schwarzen Pferd, Porträt in Schwarzweiß"></div>
     </div>
+
+    <!-- SCROLL HINT -->
+<div class="scroll-hint">⟶</div>
 
     <div class="bottom-block">
       <div class="contact-block">
