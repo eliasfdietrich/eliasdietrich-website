@@ -1,0 +1,16 @@
+{
+ "name": "Elias Dietrich Fotografie",
+ "short_name": "Elias Dietrich",
+ "lang": "de-AT",
+ "start_url": "/",
+ "display": "browser",
+ "background_color": "#333333",
+ "theme_color": "#333333",
+ "icons": [
+  {
+   "src": "/assets/favicon.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  }
+ ]
+}
