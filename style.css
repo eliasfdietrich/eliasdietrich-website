@@ -1,6 +1,6 @@
 /* Elias Dietrich – Teaser (Design der kommenden Website) */
-@font-face{font-family:'Archivo';src:url('../fonts/archivo.woff2') format('woff2');font-weight:100 900;font-stretch:62% 125%;font-display:swap}
-@font-face{font-family:'Inter';src:url('../fonts/inter.woff2') format('woff2');font-weight:100 900;font-display:swap}
+@font-face{font-family:'Archivo';src:url('archivo.woff2') format('woff2');font-weight:100 900;font-stretch:62% 125%;font-display:swap}
+@font-face{font-family:'Inter';src:url('inter.woff2') format('woff2');font-weight:100 900;font-display:swap}
 :root{--bg-dark:#333;--paper:#F4F3EF;--line:#4A4A4A;--dim:#A0A0A0;--faint:#6A6A6A;--moss:#707A5C;--moss-light:#93A176;
 --font-display:'Archivo','Arial Narrow',sans-serif;--font-nav:'Archivo',Arial,sans-serif;--font-body:'Inter',system-ui,sans-serif}
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
